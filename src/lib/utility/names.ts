@@ -1,6 +1,6 @@
 export default {
-  APP_NAME: "ClimatDash",
-  SITE_URL: "ClimatDash.vercel.app",
+  APP_NAME: "ClimateDash",
+  SITE_URL: "ClimateDash.vercel.app",
   BLOCKCHAIN: "Osmosis",
   BLOCKCHAIN_HEADER_GRADIENT: "linear-gradient(90deg, #85FFBD 20%, #FFFB7D 100%)",
   BLOCKCHAIN_HEADER_GRADIENT_OVERLAY_DARK:
