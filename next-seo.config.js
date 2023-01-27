@@ -2,27 +2,26 @@ import names from "lib/utility/names";
 
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "ClimatDash",
-  titleTemplate: "%s | Business Intelligence Dashboard Osmosis",
-  defaultTitle: "ClimatDash | Business Intelligence Dashboard Osmosis ",
-  description:
-    "Best Business Intelligence Dashboard Osmosis by MetricsDao, Flipside Crypto and Setbap ",
-  canonical: "https://ClimatDash.vercel.app/",
+  title: "ClimateDash",
+  titleTemplate: "%s | Review Climate change in 2022 in Japan and France",
+  defaultTitle:
+    "ClimateDash | Review Climate change in 2022 in Japan and France ",
+  canonical: "https://ClimateDash.vercel.app/",
   openGraph: {
-    url: "https://ClimatDash.vercel.app/",
-    title: "ClimatDash",
+    url: "https://ClimateDash.vercel.app/",
+    title: "ClimateDash",
     description:
-      "Best Business Intelligence Dashboard Osmosis by MetricsDao, Flipside Crypto and Setbap ",
+      "ClimateDash | Review Climate change in 2022 in Japan and France ",
     images: [
       {
         url: `https://${names.SITE_URL}/og.png`,
-        alt: `${names.APP_NAME} by Flipside Crypto and Setbap`,
+        alt: `${names.APP_NAME} by MetricsDao and elSina`,
       },
     ],
-    site_name: "ClimatDash",
+    site_name: "ClimateDash",
   },
   twitter: {
-    handle: "@flipsidecrypto",
+    handle: "@elSinaCrypto",
     cardType: "summary_large_image",
   },
 };

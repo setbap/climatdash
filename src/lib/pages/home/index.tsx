@@ -33,43 +33,20 @@ const Home = ({
 }: HomeType): JSX.Element => {
   return (
     <>
-      <NextSeo
-        title={`Climat | Transactions`}
-        description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
-        openGraph={{
-          url: `https://${names.SITE_URL}/`,
-          title: `Home`,
-          description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
-          images: [
-            {
-              url: `https://${names.SITE_URL}/og.png`,
-              alt: `${names.APP_NAME} by Flipside Crypto and Setbap`,
-            },
-          ],
-          site_name: `${names.APP_NAME}`,
-        }}
-        twitter={{
-          handle: "@flipsidecrypto",
-          cardType: "summary_large_image",
-        }}
-      />
+      <NextSeo title={`Temperature & Precipitation`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Climat Transaction">
+        <HeaderSection title="Temperature & Precipitation">
           {`
 The following topics are shown on this page:
-* __Transactions__ : Number of transactions made on a blockchain.
-* __Active Wallets__ : Number of those wallets made at least a transaction during curtain period.
+* __Temperature__ : Information  Temperature in 2022 in both Country
+* __Precipitation__ : Information Precipitation in 2022 in both Country
 
 `}
         </HeaderSection>
         <Box pt={"4"}></Box>
 
-        <HeaderSection title="Glance">
-          {`
+        <HeaderSection title="Glance" />
 
-according section defined in above, i prepare some of static about these topics. all data came from Flipside data and with click of title of each item can see query these data in Flipside Crypto
-`}
-        </HeaderSection>
         <SimpleGrid
           my={"6"}
           columns={{ base: 1, md: 2, lg: 2, "2xl": 3 }}

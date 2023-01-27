@@ -1,4 +1,4 @@
-import { Box, GridItem, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
+import { Box, GridItem, SimpleGrid } from "@chakra-ui/react";
 import HeaderSection from "lib/components/basic/HeaderSection";
 import TextBox from "lib/components/charts/TextBox";
 import Image from "next/image";
@@ -70,17 +70,15 @@ __Github__
       </SimpleGrid>
       <HeaderSection title={"About"}>
         {`
-This dashboard is made with love by members of the Osmosis community, in partnership with MetricsDao and Flipside Crypto. We hope it serves as a valuable window into high-level metrics that display the vitality and growth of the Osmosis Blockchain.
-
+This dashboard is made with love by members of MetricsDao Community, in partnership with MetricsDao and NOAA. We hope it serves as a valuable window into high-level metrics.
 `}
       </HeaderSection>
       <Box mb={"5"} />
       <HeaderSection title={"Methodology"}>
         {`
 
--   Data is drawn from a combination of Flipside Crypto’s Osmosis tables and existing APIs.
+-   Data is drawn from __National Centers for Environmental Information__.
     
--   For charts where data comes from Flipside’s data, a link to the underlying query is provided in the Settings gear wheel at the top right of each visualization.
     
 
 Last Updated: __${new Date().toLocaleString("en", { dateStyle: "full" })}__

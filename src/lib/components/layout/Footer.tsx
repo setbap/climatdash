@@ -6,6 +6,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FlipSideIcon, MetricsDoa } from "../basic/FlipSideIcon";
 
@@ -31,13 +32,19 @@ export default function Footer() {
           <Text>Powered by</Text>
           <Link
             style={{ marginInlineStart: "0.25em" }}
-            href={"https://flipsidecrypto.xyz/"}
+            href={"https://www.ncdc.noaa.gov/cdo-web/datasets"}
             isExternal
             display={"inline-flex"}
           >
-            Flipside Crypto{" "}
-            <Box style={{ marginTop: "-0.05em" }} ml={"1"}>
-              <FlipSideIcon fill={baseColor} />
+            <Box style={{ marginTop: "0.15em" }} ml={"1"}>
+              <img
+                width={64}
+                height={16}
+                src={
+                  "https://www.ncdc.noaa.gov/shared/v1/images/logos/logo_noaa.png"
+                }
+                alt={"NOAA site icon"}
+              />
             </Box>
           </Link>
           <Text style={{ marginInlineStart: "0.3em" }}>&</Text>
@@ -56,7 +63,7 @@ export default function Footer() {
           <Text style={{ marginInlineStart: "0.3em" }}>&</Text>
           <Link
             style={{ marginInlineStart: "0.25em" }}
-            href={"http://github.com/setbap"}
+            href={"http://github.com/setbap/climatdash"}
             isExternal
             display={"inline-flex"}
           >

@@ -25,26 +25,7 @@ const colors = [
 const Home = ({ totalWindInfo, dailyInfo }: WindType): JSX.Element => {
   return (
     <>
-      <NextSeo
-        title={`Wind | Transactions`}
-        description={`Track the latest stats and trends on ${names.BLOCKCHAIN}`}
-        openGraph={{
-          url: `https://${names.SITE_URL}/`,
-          title: `Home`,
-          description: `Track the latest stats and trends on ${names.BLOCKCHAIN}`,
-          images: [
-            {
-              url: `https://${names.SITE_URL}/og.png`,
-              alt: `${names.APP_NAME} by Flipside Crypto and Setbap`,
-            },
-          ],
-          site_name: `${names.APP_NAME}`,
-        }}
-        twitter={{
-          handle: "@flipsidecrypto",
-          cardType: "summary_large_image",
-        }}
-      />
+      <NextSeo title={`Wind | Transactions`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <HeaderSection title="Wind">
           {`
