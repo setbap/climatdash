@@ -218,28 +218,6 @@ according section defined in above, i prepare some of static about these topics.
             barDataKey={"JA PRCP"}
             lineDataKey="avg PRCP"
           />
-          {/*
-          <ChartBox
-            data={transactionsTXInfo.data}
-            queryLink={transactionsTXInfo.key}
-            title={transactionsTXInfoNames[4]}
-            baseSpan={3}
-            customColor={colors[0]}
-            xAxisDataKey="Day"
-            areaDataKey="Cum tx count"
-          /> */}
-          <HeaderSection title="Active Wallets" />
-          {/* <LineChartWithBar
-            data={transactionsTXInfo.data}
-            queryLink={transactionsTXInfo.key}
-            title={transactionsTXInfoNames[2]}
-            baseSpan={3}
-            customColor={colors[0]}
-            barColor={colors[2]}
-            xAxisDataKey="Day"
-            barDataKey={"Active users"}
-            lineDataKey="AVG Active users"
-          /> */}
         </SimpleGrid>
       </Box>
     </>
