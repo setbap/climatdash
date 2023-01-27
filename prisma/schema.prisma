@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./climat.db"
+}
+
+model DailySummaries {
+  STATION String?
+  NAME    String?
+  DATE    String?
+  PRCP    Float?
+  SNWD    String?
+  TAVG    Int?
+  TMAX    String?
+  TMIN    String?
+  id      Int     @id @default(autoincrement())
+}
+
+model LocalClimatologicalData {
+  STATION                   Float?
+  DATE                      String?
+  HourlyDewPointTemperature Int?
+  HourlyDryBulbTemperature  Int?
+  HourlyVisibility          Float?
+  HourlyWindDirection       Int?
+  HourlyWindSpeed           Int?
+  id                        Int     @id @default(autoincrement())
+}
