@@ -28,4 +28,5 @@ model LocalClimatologicalData {
   HourlyWindDirection       Int?
   HourlyWindSpeed           Int?
   id                        Int     @id @default(autoincrement())
+  LOCATION                  String?
 }

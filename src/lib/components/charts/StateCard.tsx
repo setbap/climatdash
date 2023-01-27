@@ -158,21 +158,21 @@ export const StatsCard = (props: StatsCardProps) => {
         </StatLabel>
       ) : (
         <Flex>
-          <Link
+          {/* <Link
             href={
               isExternalLink
                 ? props.link
                 : `https://app.flipsidecrypto.com/velocity/queries/${props.link}`
             }
             isExternal
-          >
-            <StatLabel fontWeight="medium" noOfLines={1} display={"flex"}>
-              {title}{" "}
-              <Box px={"1"}>
-                <FiExternalLink />
-              </Box>
-            </StatLabel>
-          </Link>
+          > */}
+          <StatLabel fontWeight="medium" noOfLines={1} display={"flex"}>
+            {title}{" "}
+            {/* <Box px={"1"}>
+              <FiExternalLink />
+            </Box> */}
+          </StatLabel>
+          {/* </Link> */}
           {tooltip}
         </Flex>
       )}

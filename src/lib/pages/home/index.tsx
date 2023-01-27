@@ -7,6 +7,7 @@ import { HomeType } from "pages";
 import LineChartWithBar from "lib/components/charts/LineChartWithBar";
 import HeaderSection from "lib/components/basic/HeaderSection";
 import DonutChart from "lib/components/charts/DonutChart";
+import { Fragment } from "react";
 
 const colors = [
   "#ff5722",
@@ -102,8 +103,8 @@ according section defined in above, i prepare some of static about these topics.
             hasArrowIcon={false}
             link={""}
           />
-          {daliyTotalInfo.map((station) => (
-            <>
+          {daliyTotalInfo.map((station, index) => (
+            <Fragment key={index.toString() + station.NAME}>
               <StatsCard
                 stat={station._count._all}
                 title={`Number of Days (${station.NAME})`}
@@ -140,7 +141,7 @@ according section defined in above, i prepare some of static about these topics.
                 hasArrowIcon={false}
                 link={""}
               />
-            </>
+            </Fragment>
           ))}
         </SimpleGrid>
 
