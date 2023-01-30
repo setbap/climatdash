@@ -29,7 +29,14 @@ const Home = ({ totalWindInfo, dailyInfo }: WindType): JSX.Element => {
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <HeaderSection title="Wind">
           {`
-in this part i compare two country Japan and France in 4 section __Dew Temperature__, __Dry Bulb__,  __Visibility__, __Wind Speed__
+The Local Climatological Data (LCD) summaries provide a synopsis of climatic values for a single weather station over a specific month. The summaries are a product of surface observations from both manual and automated (AWOS, ASOS) stations with source data taken from the National Centers for Environmental Information’s Integrated Surface Data (ISD) dataset. Geographic availability includes thousands of locations worldwide. Climatic values given include hourly, daily, and monthly measurements of temperature, dew point, humidity, winds, sky condition, weather type, atmospheric pressure and more. [Dataset URL](https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00684/html)
+
+The following metrics are displayed on this page:
+Dew Point Temperature = Average dew point temperature for the day in Fahrenheit
+Dry Bulb Temperature = Average dry bulb temperature for the day in Fahrenheit
+Visibility = Average visibility for the day in miles
+Wind speeds = Average wind speed for the day in miles per hour
+
 `}
         </HeaderSection>
         <Box pt={"4"}></Box>
@@ -106,7 +113,11 @@ in this part i compare two country Japan and France in 4 section __Dew Temperatu
           columns={{ sm: 1, md: 1, lg: 2, "2xl": 3 }}
           spacing={{ base: 1, md: 2, lg: 4 }}
         >
-          <HeaderSection title="Dew Temperature" />
+          <HeaderSection title="Dew Temperature">
+            {`
+The dew point is the temperature the air needs to be cooled to (at constant pressure) in order to achieve a relative humidity (RH) of 100%. At this point the air cannot hold more water in the gas form.
+            `}
+          </HeaderSection>
           <StackedAreaChart
             extraInfoToTooltip=""
             modalInfo=""
@@ -128,7 +139,11 @@ in this part i compare two country Japan and France in 4 section __Dew Temperatu
             ]}
           />
 
-          <HeaderSection title="Dry Bulb Temperature" />
+          <HeaderSection title="Dry Bulb Temperature">
+            {`
+The Dry Bulb Temperature refers to the ambient air temperature. It is called "Dry Bulb" because the air temperature is indicated by a thermometer not affected by humidity. It is the same temperature as would be felt by the human body and is the temperature used by meteorologists to measure atmospheric conditions. It is also the temperature that is used to calculate the relative humidity of the air.
+            `}
+          </HeaderSection>
           <StackedAreaChart
             extraInfoToTooltip=""
             modalInfo=""
@@ -150,7 +165,11 @@ in this part i compare two country Japan and France in 4 section __Dew Temperatu
             ]}
           />
 
-          <HeaderSection title="Visibility" />
+          <HeaderSection title="Visibility">
+            {`
+Visibility is a measure of the transparency of the atmosphere, which is an important aspect of meteorology, as it is related to air quality and safety, and it affects the operations of airports, ships, and other transportation networks. Poor visibility can also be a hazard to drivers, as it can reduce the ability to see obstacles and other vehicles on the road. Visibility is typically measured using a visibility meter, which measures the amount of light that is scattered in the atmosphere.
+            `}
+          </HeaderSection>
           <StackedAreaChart
             extraInfoToTooltip=""
             modalInfo=""
