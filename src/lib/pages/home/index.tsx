@@ -37,10 +37,14 @@ const Home = ({
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <HeaderSection title="Temperature & Precipitation">
           {`
-The following topics are shown on this page:
-* __Temperature__ : Information  Temperature in 2022 in both Country
-* __Precipitation__ : Information Precipitation in 2022 in both Country
+Description GHCN (Global Historical Climatology Network)-Daily is a database that addresses the critical need for historical daily temperature, precipitation, and snow records over global land areas. GHCN-Daily is a composite of climate records from numerous sources that were merged and then subjected to a suite of quality assurance reviews. The archive includes over 40 meteorological elements including temperature daily maximum/minimum, temperature at observation time, precipitation, snowfall, snow depth, evaporation, wind movement, wind maximums, soil temperature, cloudiness, and more. [Dataset URL](https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html)
 
+The following metrics are displayed on this page:
+Precipitation in inches
+T MAX = Maximum temperature in Fahrenheit and Celsius
+T MIN = Minimum temperature in Fahrenheit and Celsius
+
+The data pertain to two countries, France and Japan, since the beginning of 2022.
 `}
         </HeaderSection>
         <Box pt={"4"}></Box>
