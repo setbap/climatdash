@@ -67,7 +67,7 @@ export default function Footer() {
             isExternal
             display={"inline-flex"}
           >
-            SetBap{" "}
+            SetBap{" (source code) "}
             <Box mt={"1"} ml={"1"}>
               <FaGithub />
             </Box>

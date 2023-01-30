@@ -27,15 +27,21 @@ const Home = ({ totalWindInfo, dailyInfo }: WindType): JSX.Element => {
     <>
       <NextSeo title={`Wind | Transactions`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title="Wind">
+        <HeaderSection title="U.S. Local Climatological Data (LCD)">
           {`
 The Local Climatological Data (LCD) summaries provide a synopsis of climatic values for a single weather station over a specific month. The summaries are a product of surface observations from both manual and automated (AWOS, ASOS) stations with source data taken from the National Centers for Environmental Information’s Integrated Surface Data (ISD) dataset. Geographic availability includes thousands of locations worldwide. Climatic values given include hourly, daily, and monthly measurements of temperature, dew point, humidity, winds, sky condition, weather type, atmospheric pressure and more. [Dataset URL](https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00684/html)
 
 The following metrics are displayed on this page:
-Dew Point Temperature = Average dew point temperature for the day in Fahrenheit
-Dry Bulb Temperature = Average dry bulb temperature for the day in Fahrenheit
-Visibility = Average visibility for the day in miles
-Wind speeds = Average wind speed for the day in miles per hour
+
+* Dew Point Temperature = Average dew point temperature for the day in Fahrenheit
+
+* Dry Bulb Temperature = Average dry bulb temperature for the day in Fahrenheit
+
+* Visibility = Average visibility for the day in miles
+
+* Wind speeds = Average wind speed for the day in miles per hour
+
+The data pertain to two countries, France and Japan, since the beginning of 2022.
 
 `}
         </HeaderSection>
